@@ -4,15 +4,11 @@
       <h1 i18n="@@appTitle">My Store</h1>
     </a>
     <div class="header-wraper">
-      <!-- <button routerLink="/home" class="btn btn-sm btn-link">Home</button>
-      <button routerLink="/customers" class="btn btn-sm btn-link">Customer</button>
-      <button routerLink="/products" class="btn btn-sm btn-link">Products</button> -->
-      <button i18n="@@buttonHome" mat-button matTooltip="Home" routerLink="/home">Home</button>
+           <button i18n="@@buttonHome" mat-button matTooltip="Home" routerLink="/home">Home</button>
       <button i18n="@@buttonCustomer" mat-button matTooltip="Customer" routerLink="/customers">Customer</button>
       <button i18n="@@buttonProducts" mat-button matTooltip="Products" routerLink="/products">Products</button>
       <a routerLink="/products/cart" class="button fancy-button warn"><i class="material-icons">shopping_cart</i>           
-        <span class="badge badge-warning">{{cartvalueLength}}</span>
-        <!-- <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon> -->
+        <span class="badge badge-warning">{{cartvalueLength}}</span>       
        </a>
     </div>    
   </div>
