@@ -1,0 +1,22 @@
+<h3>{{displayName}}</h3>
+
+<mat-card class="example-card">
+<mat-card-content>
+  <mat-list>
+    <mat-list-item *ngFor="let item of items; index as itemsId">
+       <p> {{itemsId+1}} </p>
+    <p> <label>Product Name: </label> <span> {{item.productName}}</span> </p>
+    <p> <label>Size: </label> <span> {{item.size}}</span> </p>
+    <p> <label>Category: </label> <span> {{item.category}}</span> </p>
+    <p> <label>Quantity: </label> <span> {{item.quantity}}</span> </p>
+    <p> <label>Price: </label> <span> {{item.price | currency:'INR'}}</span> </p>
+       <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
+    </mat-list-item>  
+ </mat-list>
+</mat-card-content>
+
+<p i18n="@@emptyCartPageError" *ngIf="!itemFlag">Ohh !!! there is no item in cart, please add item from productList</p>
+<div class="button-group">
+<button type="submit" [routerLink]="['']" matTooltip="Back to productList" mat-raised-button><mat-icon>arrow_back</mat-icon> <span i18n="@@backToListCartButton">Back To List</span></button>
+<button type="submit" i18n="@@clearCartButton" matTooltip="Clear Cart" *ngIf="itemFlag" mat-raised-button color="warn" (click)="clearCart()">Clear Cart</button>
+</div>

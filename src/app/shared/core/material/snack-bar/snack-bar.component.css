@@ -1,0 +1,14 @@
+.mat-snack-bar-container {
+    /* background: #323232; */
+    color: #fff;
+    min-height: 30px;
+    margin: 0;
+    box-shadow: none;
+}
+.mat-simple-snackbar {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+}
+.mat-simple-snackbar span {
+    color: #ff4081;
+}

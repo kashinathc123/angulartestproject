@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="appTitle" datatype="html">
+        <source>My Store</source>
+        <target>Mein Laden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="buttonHome" datatype="html">
+        <source>Home</source>
+        <target>Zuhause</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="buttonCustomer" datatype="html">
+        <source>Customer</source>
+        <target>Kunde</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="buttonProducts" datatype="html">
+        <source>Products</source>
+        <target>Produkte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeTitle" datatype="html">
+        <source>Home</source>
+        <target>Zuhause</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homePageTitle" datatype="html">
+        <source>Shopping Cart</source>
+        <target>Einkaufswagen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homePageDescription" datatype="html">
+        <source>The software allows online shopping customers to accumulate a list of items for purchase. At the point of sale, the software typically calculates a total for the order, including freight transport, postage as well as packaging and labeling. Associated taxes are calculated as applicable. The data is used in online marketing..</source>
+        <target>Mit der Software können Online-Shopping-Kunden eine Liste mit Artikeln zum Kauf zusammenstellen. Am Point of Sale berechnet die Software in der Regel eine Gesamtsumme für die Bestellung, einschließlich Frachttransport, Porto sowie Verpackung und Etikettierung. Zugehörige Steuern werden gegebenenfalls berechnet. Die Daten werden im Online-Marketing verwendet..</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homePageCopyRight" datatype="html">
+        <source>Information copy rights @Wiki-pedia</source>
+        <target>Informationskopierrechte @ Wiki-pedia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="addProductButton" datatype="html">
+        <source>Add Product</source>
+        <target>Produkt hinzufügen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/product-list/product-list.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="backToListButton" datatype="html">
+        <source>Back To List</source>
+        <target>Zurück zur Liste</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/product-detail/product-detail.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="addToCartButton" datatype="html">
+        <source>Add to cart</source>
+        <target>In den Warenkorb legen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/product-detail/product-detail.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="updateButton" datatype="html">
+        <source>Update</source>
+        <target>Aktualisieren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/product-edit/product-edit.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetCancelButton" datatype="html">
+        <source>Cancel</source>
+        <target>Stornieren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/product-edit/product-edit.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emptyCartPageError" datatype="html">
+        <source>Ohh !!! there is no item in cart, please add item from productList</source>
+        <target>Ohh !!! Es befindet sich kein Artikel im Warenkorb. Bitte fügen Sie einen Artikel aus der Produktliste hinzu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/cartComponent/CartComponent.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="backToListCartButton" datatype="html">
+        <source>Back To List</source>
+        <target>Zurück zur Liste</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/cartComponent/CartComponent.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="clearCartButton" datatype="html">
+        <source>Clear Cart</source>
+        <target>Wagen löschen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/products/cartComponent/CartComponent.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

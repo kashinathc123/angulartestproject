@@ -1,0 +1,8 @@
+<form [formGroup]="editProductForm" (ngSubmit)="updateProductForm(editProductForm.value)">
+  <h3><mat-icon>edit</mat-icon> {{pageTitle}}</h3>
+  <app-common-form formControlName="profile" [ngClass]="{ 'red': _checkStatus }"></app-common-form>  
+  <div class="button-group">
+    <button type="submit" i18n="@@updateButton" matTooltip="Update" mat-raised-button color="primary" [disabled]="!check">Update</button>
+    <button type="button" i18n="@@resetCancelButton" matTooltip="Cancel" mat-raised-button color="mat-button-base" (click)="resetForm()" [disabled]="!check">Cancel</button>
+  </div> 
+</form>

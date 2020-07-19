@@ -1,0 +1,8 @@
+<form [formGroup]="signupForm" (ngSubmit)="saveProduct(signupForm.value)">
+  <h3>{{pageTitle}}</h3>
+  <app-common-form formControlName="profile"></app-common-form>  
+  <div class="button-group">
+    <button type="submit" mat-raised-button matTooltip="Submit" color="primary" [disabled]="!signupForm.valid">Submit</button>
+    <button type="button" mat-raised-button matTooltip="Reset" color="mat-button-base" (click)="resetForm()" [disabled]="!signupForm.valid">Reset</button>
+  </div> 
+</form>

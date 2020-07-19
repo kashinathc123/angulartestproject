@@ -1,0 +1,27 @@
+<h3>{{displayName}}</h3>
+
+<div class='product-page-wrapper no-product' *ngIf="!product">
+  No such product available!!
+</div>
+
+<div class='product-page-wrapper' *ngIf="product">
+<mat-card class="example-card">
+  <mat-card-content>
+    <p class="productId"> <label>Sku ID: </label> <span>{{product.id}}</span> </p>
+    <p class="productName"> <label>Product Name: </label> <span>{{product.productName}}</span> </p>
+    <p class="productSize"> <label>Size: </label> <span>{{product.size}}</span> </p>
+    <p class="productCategory"> <label>Category: </label> <span>{{product.category}}</span> </p>
+    <p class="productQuantity"> <label>Quantity: </label> <span>{{product.quantity}}</span> </p>
+    <p class="productPrice"> <label>Price: </label> <span>{{product.price | currency:'INR'}}</span> </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="button-group">
+      <button type="button" matTooltip="Back To List" routerLink="/products" mat-raised-button><mat-icon>arrow_back</mat-icon> <span i18n="@@backToListButton">Back To List</span></button>
+      <button type="button" matTooltip="Edit Product" routerLink="/products/{{product.id}}/edit" mat-raised-button color="primary"><mat-icon>edit</mat-icon></button>
+      <button type="button" (click)="deleteProduct(product)" matTooltip="Delete Product" routerLink="/products" mat-raised-button color="warn"><mat-icon>delete</mat-icon></button>
+      <button type="button" i18n="@@addToCartButton" (click)="addToCart(product)" routerLink="/products/cart" mat-raised-button color="accent">Add to cart</button>
+    </div>
+  </mat-card-actions>
+</mat-card>
+</div>
+

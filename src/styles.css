@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.error {
+    color: red;
+    margin: 0;
+  }
+  
+.is-invalid .form-control{
+    border-color: #dc3545;
+}
+.is-invalid .form-control:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25);
+}
+.form-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .button-group button{
+    margin-right: 10px;
+}
+.form-control.is-invalid{
+    background-image: none;
+}
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-form-field-infix {
+    width: 150px;
+  }
+  .mat-header-cell {
+    background-color: #0000001f;
+}
+.mat-list-base .mat-list-item .mat-list-item-content{
+  justify-content: space-around;
+}

@@ -1,0 +1,19 @@
+<h3>{{title}}</h3>
+
+<div class='product-page-wrapper' *ngIf="!customerRecord">
+  No such product available!!
+</div>
+
+<div class='product-page-wrapper' *ngIf="customerRecord">
+  <div class='prow'>
+    <div class='pcolumn'>
+      <p> <label>ID: </label> <span>{{customerRecord.id}}</span> </p>
+      <p> <label>Name: </label> <span>{{customerRecord.name}}</span> </p>
+      <p> <label>City: </label> <span>{{customerRecord.city}}</span> </p>
+      <p> <label>Country: </label> <span>{{customerRecord.country}}</span> </p>
+      <p> <label>Zip-Code: </label> <span>{{customerRecord.zipcode}}</span> </p>
+    </div>
+   </div> 
+</div>
+
+<button routerLink="/customers" class="btn btn-sm btn-link">Back To List</button>

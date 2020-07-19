@@ -1,0 +1,35 @@
+.product-page-wrapper {
+  padding: 10px;
+  -moz-box-shadow: 0px 3px 8px #ddd;
+  -webkit-box-shadow: 0px 3px 8px #ddd;
+  box-shadow: 0px 3px 8px #ddd;
+  /* border: 1px solid #ddd; */
+  min-height: 200px;
+}
+
+.prow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.pcolumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+
+.blue-column {
+  background-color: blue;
+  height: 100px;
+}
+
+.green-column {
+  height: 100px;
+  background-color: green;
+}
+label {
+  font-weight: 700;
+  padding-right: 10px;
+}

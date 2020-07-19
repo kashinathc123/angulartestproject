@@ -1,0 +1,28 @@
+:host {
+  border: 1px solid #eee;
+  display: block;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.form-wrapper .form-group label {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  color: #7d7d7d;
+}
+.form-wrapper .form-group input::placeholder,
+.form-wrapper .form-group .form-control {
+  color: #7d7d7d;
+  font-weight: 300;
+}
+.select-main {
+  width: 150px;
+}

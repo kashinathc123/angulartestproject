@@ -1,0 +1,79 @@
+<h3>{{displayName}}</h3>
+
+<ng-template [ngIf]="dataLength == 0">
+  <div class="mat-elevation-z2 no-results">
+    No products available !!!
+  </div>
+</ng-template>
+
+<ng-container>
+<div class="row" *ngIf="dataLength > 0"> 
+  <div class="form col-md-6">
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search here...">
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-6">
+    <button mat-icon-button matTooltip="Add Product" routerLink="add-new-product"><mat-icon>add_circle</mat-icon> <span i18n="@@addProductButton">Add Product</span></button>
+  </div>
+</div> 
+
+<div class="mat-elevation-z2">
+  <mat-table #table [dataSource]="dataSource" matSort>
+
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> No. </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="productName">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"><a routerLink="{{element.id}}/detail">{{element.productName}}</a> </mat-cell>
+    </ng-container>
+
+    <!-- Category Column -->
+    <ng-container matColumnDef="category">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Category </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.category}} </mat-cell>
+    </ng-container>
+
+     <!-- Color Column -->
+     <ng-container matColumnDef="color">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Color </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.color}} </mat-cell>
+    </ng-container>
+
+    <!-- Quantity Column -->
+    <ng-container matColumnDef="quantity">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Quantity </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.quantity}} </mat-cell>
+    </ng-container>
+
+     <!-- Price Column -->
+     <ng-container matColumnDef="price">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Price </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.price}} </mat-cell>
+    </ng-container>
+
+     <!-- Size Column -->
+     <ng-container matColumnDef="size">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Size </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.size}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+  
+  <mat-paginator #paginator
+                 [length]="dataLength"
+                 [pageIndex]="0"
+                 [pageSize]="5"
+                 [pageSizeOptions]="[5, 10, 25, 100]"
+                 [showFirstLastButtons]="true" >
+  </mat-paginator>
+</div>
+</ng-container>
